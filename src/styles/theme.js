@@ -1,22 +1,26 @@
 import { hex2rgba } from '@utils';
 
-const ACCENT = '#64ffda';
-const DARK_BG = '#020c1b';
-const BG = '#0a192f';
+// Custom earthy/neutral palette
+const ACCENT = '#b96d40'; // Muted rust orange for buttons/accents
+const BG = '#f5f0e1'; // Soft light tan (main background)
+const DARK_BG = '#e5d5c1'; // Slightly deeper tan for sections
 
 const theme = {
   colors: {
     darkNavy: DARK_BG,
     navy: BG,
-    lightNavy: '#172a45',
-    lightestNavy: '#303C55',
-    slate: '#8892b0',
-    lightSlate: '#a8b2d1',
-    lightestSlate: '#ccd6f6',
-    white: '#e6f1ff',
+    lightNavy: '#d6c6b9',
+    lightestNavy: '#c9b8a6',
+
+    // Updated text tones
+    slate: '#3b2f2f', // deeper earthy brown for body text
+    lightSlate: '#594638', // slightly lighter, still brown
+    lightestSlate: '#7c695a', // subtle contrast
+
+    white: '#fefbf7',
     green: ACCENT,
     transGreen: hex2rgba(ACCENT, 0.07),
-    shadowNavy: hex2rgba(DARK_BG, 0.7),
+    shadowNavy: hex2rgba(DARK_BG, 0.3),
   },
 
   fonts: {

@@ -1,10 +1,10 @@
 ---
-title: 'Hello, my name is'
-name: 'Yashita Namdeo'
-subtitle: 'I love exploring new things!'
+title: 'Hi there, my name is'
+name: 'Alexander DeLise'
+subtitle: 'Test'
 buttonText: 'Get In Touch'
 ---
 
-I'm a Final Year Computer Science Engineering Student at SVVV, Indore. Primarily interested in Web Development and Data Science.
+I am a second-year Applied and Computational Mathematics and Computational Science dual-degree Presidential Scholar at Florida State University.
 
-I enjoy learning new skills and implementing them in real life!
+I perform research in Operations Research and Industrial Engineering, and aspire to create data-driven solutions to real-world problems.

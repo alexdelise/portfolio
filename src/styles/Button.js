@@ -3,8 +3,8 @@ import theme from './theme';
 const { colors, fontSizes, fonts } = theme;
 
 const Button = styled.button`
-  color: ${colors.green};
-  background-color: transparent;
+  color: white;
+  background-color: ${colors.green};
   border: 1px solid ${colors.green};
   border-radius: ${theme.borderRadius};
   font-size: ${fontSizes.smish};
@@ -18,9 +18,10 @@ const Button = styled.button`
   &:hover,
   &:focus,
   &:active {
-    background-color: ${colors.transGreen};
+    background-color: ${colors.lightSlate}; /* soft olive hover */
     outline: none;
   }
+
   &:after {
     display: none !important;
   }
