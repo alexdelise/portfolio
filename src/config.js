@@ -1,38 +1,30 @@
 module.exports = {
-  siteTitle: 'Yashita Namdeo',
+  siteTitle: 'Alexander DeLise',
   siteDescription:
     'Yashita Namdeo is an incoming Software Developer, based in India, who loves learning new things and helping tech beginners.',
   siteKeywords:
-    'Yashita Namdeo, Yashita, Namdeo, yashitanamdeo, software engineer, web developer, javascript, python, java, svvv, indore',
+    'Alexander DeLise, Yashita, Namdeo, yashitanamdeo, software engineer, web developer, javascript, python, java, svvv, indore',
   siteUrl: 'https://yashitanamdeo.github.io/',
   siteLanguage: 'en_US',
   googleAnalyticsID: 'UA-45666519-2',
   googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
-  name: 'Yashita Namdeo',
-  location: 'Indore, India',
-  email: 'yashita.namdeo2000@gmail.com',
-  github: 'https://github.com/yashitanamdeo',
+  name: 'Alexander DeLise',
+  location: ' Tampa, FL',
+  email: 'alex.r.delise@gmail.com',
+  github: 'https://github.com/alexdelise',
   twitterHandle: '@',
   socialMedia: [
     {
-      name: 'GitHub',
-      url: 'https://github.com/yashitanamdeo',
-    },
-    {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/yashitanamdeo/',
+      url: 'https://www.linkedin.com/in/alexanderdelise/',
     },
     {
-      name: 'Codepen',
-      url: 'https://codepen.io/yashitanamdeo',
+      name: 'GoogleScholar',
+      url: 'https://scholar.google.com/citations?user=Yye1qVoAAAAJ&hl=en',
     },
     {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/yashitanamdeo',
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/',
+      name: 'GitHub',
+      url: 'https://github.com/alexdelise',
     },
   ],
 
@@ -42,7 +34,7 @@ module.exports = {
       url: '/#about',
     },
     {
-      name: 'Experience',
+      name: 'Research',
       url: '/#jobs',
     },
     {
