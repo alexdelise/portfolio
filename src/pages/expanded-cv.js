@@ -60,9 +60,28 @@ const CvSectionHeading = styled.h2`
   line-height: 1.2;
 `;
 
+// Configuration for table headers and field mappings per section
 const sectionConfig = {
   Education: {
     headers: ['Period', 'Degree', 'Institution', 'Link'],
+    fieldMapping: {
+      year: 'date', // now treated as a custom string
+      title: 'degree',
+      institution: 'institution',
+      link: 'external',
+    },
+  },
+  Industry: {
+    headers: ['Period', 'Position', 'Company', 'Link'],
+    fieldMapping: {
+      year: 'date',
+      title: 'degree', // Assuming "degree" field holds the job title
+      institution: 'institution', // For industry, this is the company
+      link: 'external',
+    },
+  },
+  'Conference Proceedings': {
+    headers: ['Date', 'Title', 'Conference', 'Link'],
     fieldMapping: {
       year: 'date',
       title: 'degree',
@@ -70,7 +89,51 @@ const sectionConfig = {
       link: 'external',
     },
   },
-  // ... the rest of your configs
+  Posters: {
+    headers: ['Date', 'Title', 'Conference / Event', 'Link'],
+    fieldMapping: {
+      year: 'date',
+      title: 'degree',
+      institution: 'institution',
+      link: 'external',
+    },
+  },
+  Talks: {
+    headers: ['Period', 'Talk Title', 'Event', 'Link'],
+    fieldMapping: {
+      year: 'date',
+      title: 'degree',
+      institution: 'institution',
+      link: 'external',
+    },
+  },
+  Service: {
+    headers: ['Period', 'Role', 'Organization', 'Link'],
+    fieldMapping: {
+      year: 'date',
+      title: 'degree',
+      institution: 'institution',
+      link: 'external',
+    },
+  },
+  Honors: {
+    headers: ['Period', 'Award', 'Institution', 'Link'],
+    fieldMapping: {
+      year: 'date',
+      title: 'degree',
+      institution: 'institution',
+      link: 'external',
+    },
+  },
+  Courses: {
+    headers: ['Period', 'Course', 'Institution', 'Link'],
+    fieldMapping: {
+      year: 'date',
+      title: 'degree',
+      institution: 'institution',
+      link: 'external',
+    },
+  },
 };
 
 const ExpandedCVPage = ({ data, location }) => {
