@@ -45,6 +45,10 @@ module.exports = {
       name: 'Contact',
       url: '/#contact',
     },
+    {
+      name: 'Curriculum Vitae',
+      url: '/#cv',
+    },
   ],
 
   navHeight: 100,

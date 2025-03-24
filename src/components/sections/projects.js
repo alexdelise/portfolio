@@ -145,9 +145,10 @@ const Projects = ({ data }) => {
 
   return (
     <StyledContainer>
-      <StyledTitle ref={revealTitle}>Other Noteworthy Projects</StyledTitle>
+      <StyledTitle ref={revealTitle}>Curriculum Vitae</StyledTitle>
       <StyledArchiveLink to="/archive" ref={revealArchiveLink}>
-        View Complete List of Projects/Codes
+        Click here for my complete CV, otherwise below is a brief snapshot of my contributions to
+        the field.
       </StyledArchiveLink>
 
       <StyledGrid>

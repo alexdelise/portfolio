@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { Layout, Hero, About, Jobs, Featured, Projects, Contact } from '@components';
 import styled from 'styled-components';
 import { Main } from '@styles';
+import CurriculumVitae from '@components/sections/CurriculumVitae';
 
 const StyledMainContainer = styled(Main)`
   counter-reset: section;
@@ -17,6 +18,7 @@ const IndexPage = ({ location, data }) => (
       <Jobs data={data.jobs.edges} />
       <Featured data={data.featured.edges} />
       <Projects data={data.projects.edges} />
+      <CurriculumVitae data={data.cv.edges} />
       <Contact data={data.contact.edges} />
     </StyledMainContainer>
   </Layout>
@@ -127,6 +129,16 @@ export const pageQuery = graphql`
           frontmatter {
             title
             buttonText
+          }
+          html
+        }
+      }
+    }
+    cv: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/cv/" } }) {
+      edges {
+        node {
+          frontmatter {
+            title
           }
           html
         }

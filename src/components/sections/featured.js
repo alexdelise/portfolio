@@ -34,7 +34,7 @@ const StyledLabel = styled.h4`
 `;
 const StyledProjectName = styled.h5`
   font-size: 28px;
-  margin: 0 0 20px;
+  margin: 0 0 0 75px;
   color: ${colors.lightestSlate};
   ${media.tablet`font-size: 24px;`};
   ${media.thone`color: ${colors.white};`};
@@ -216,7 +216,7 @@ const Featured = ({ data }) => {
 
   return (
     <StyledContainer id="projects">
-      <Heading ref={revealTitle}>Some Things I&apos;ve Built</Heading>
+      <Heading ref={revealTitle}>Poster Presentations</Heading>
 
       <div>
         {featuredProjects &&
