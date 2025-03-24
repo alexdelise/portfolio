@@ -1,5 +1,5 @@
 ---
-title: 'Industry'
+title: 'Industry Experience'
 items:
   - date: '2022 - 2025'
     degree: 'Poster Title'

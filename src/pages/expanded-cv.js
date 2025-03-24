@@ -61,6 +61,7 @@ const CvSectionHeading = styled.h2`
 `;
 
 // Configuration for table headers and field mappings per section
+// where it says 'Service to the Profession' this must match exactly the title in the corresponding markdown files.
 const sectionConfig = {
   Education: {
     headers: ['Period', 'Degree', 'Institution', 'Link'],
@@ -71,7 +72,7 @@ const sectionConfig = {
       link: 'external',
     },
   },
-  Industry: {
+  'Industry Experience': {
     headers: ['Period', 'Position', 'Company', 'Link'],
     fieldMapping: {
       year: 'date',
@@ -89,7 +90,7 @@ const sectionConfig = {
       link: 'external',
     },
   },
-  Posters: {
+  'Poster Presentations': {
     headers: ['Date', 'Title', 'Conference / Event', 'Link'],
     fieldMapping: {
       year: 'date',
@@ -107,7 +108,16 @@ const sectionConfig = {
       link: 'external',
     },
   },
-  Service: {
+  'Honors and Awards': {
+    headers: ['Period', 'Award', 'Presenter', 'Link'],
+    fieldMapping: {
+      year: 'date',
+      title: 'degree',
+      institution: 'institution',
+      link: 'external',
+    },
+  },
+  'Service to the Profession': {
     headers: ['Period', 'Role', 'Organization', 'Link'],
     fieldMapping: {
       year: 'date',
@@ -116,17 +126,8 @@ const sectionConfig = {
       link: 'external',
     },
   },
-  Honors: {
-    headers: ['Period', 'Award', 'Institution', 'Link'],
-    fieldMapping: {
-      year: 'date',
-      title: 'degree',
-      institution: 'institution',
-      link: 'external',
-    },
-  },
   Courses: {
-    headers: ['Period', 'Course', 'Institution', 'Link'],
+    headers: ['Semester', 'Code', 'Course', 'Institution'],
     fieldMapping: {
       year: 'date',
       title: 'degree',
@@ -152,18 +153,19 @@ const ExpandedCVPage = ({ data, location }) => {
   const proceedingsNode = data.proceedings.edges[0].node;
   const posterNode = data.posters.edges[0].node;
   const talkNode = data.talks.edges[0].node;
-  const serviceNode = data.service.edges[0].node;
   const honorsNode = data.honors.edges[0].node;
+  const serviceNode = data.service.edges[0].node;
   const courseNode = data.courses.edges[0].node;
 
+  // this determines the order in which the sections appear on the website
   const sections = [
     eduNode,
     industryNode,
     proceedingsNode,
     posterNode,
     talkNode,
-    serviceNode,
     honorsNode,
+    serviceNode,
     courseNode,
   ];
 
@@ -228,14 +230,20 @@ const ExpandedCVPage = ({ data, location }) => {
                           <td>{item[config.fieldMapping.title]}</td>
                           <td>{item[config.fieldMapping.institution] || '—'}</td>
                           <td>
-                            {item[config.fieldMapping.link] && (
-                              <StyledLinkIcon
-                                href={item[config.fieldMapping.link]}
-                                target="_blank"
-                                rel="nofollow noopener noreferrer"
-                                aria-label="External Link">
-                                <FormattedIcon name="External" />
-                              </StyledLinkIcon>
+                            {item[config.fieldMapping.link] ? (
+                              item[config.fieldMapping.link].startsWith('http') ? (
+                                <StyledLinkIcon
+                                  href={item[config.fieldMapping.link]}
+                                  target="_blank"
+                                  rel="nofollow noopener noreferrer"
+                                  aria-label="External Link">
+                                  <FormattedIcon name="External" />
+                                </StyledLinkIcon>
+                              ) : (
+                                item[config.fieldMapping.link]
+                              )
+                            ) : (
+                              '—'
                             )}
                           </td>
                         </tr>
