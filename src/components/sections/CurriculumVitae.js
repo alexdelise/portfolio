@@ -1,31 +1,48 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import sr from '@utils/sr';
-import { srConfig } from '@config';
-import { Section, Heading } from '@styles';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
+import { Section, Heading } from '@styles';
 
-const StyledContent = styled.div`
-  max-width: 600px;
+const StyledButton = styled(Link)`
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: brown;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover {
+    background-color: #a0522d;
+  }
 `;
 
 const CurriculumVitae = ({ data }) => {
+  // Since `data` is an array, we access [0]
   const { frontmatter, html } = data[0].node;
   const { title } = frontmatter;
 
-  const revealContainer = useRef(null);
-  useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
-
   return (
-    <Section id="cv" ref={revealContainer}>
+    <Section id="cv">
       <Heading>{title}</Heading>
-      <StyledContent dangerouslySetInnerHTML={{ __html: html }} />
+      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <StyledButton to="/expanded-cv">View Full CV</StyledButton>
     </Section>
   );
 };
 
 CurriculumVitae.propTypes = {
-  data: PropTypes.array.isRequired,
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      node: PropTypes.shape({
+        frontmatter: PropTypes.shape({
+          title: PropTypes.string.isRequired,
+        }).isRequired,
+        html: PropTypes.string.isRequired,
+      }).isRequired,
+    }),
+  ).isRequired,
 };
 
 export default CurriculumVitae;
