@@ -19,8 +19,7 @@ const StyledButton = styled(Link)`
 `;
 
 const CurriculumVitae = ({ data }) => {
-  // Since `data` is an array, we access [0]
-  const { frontmatter, html } = data[0].node;
+  const { frontmatter, html } = data[8].node; // WILL HAVE TO CHANGE IT DEPENDING ON THE ORDER
   const { title } = frontmatter;
 
   return (

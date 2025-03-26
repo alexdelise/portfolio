@@ -10,5 +10,3 @@ items:
     institution: 'Florida State University'
     external: ''
 ---
-
-Optional extra text or description in the body if desired.

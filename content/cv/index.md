@@ -2,6 +2,4 @@
 title: 'Curriculum Vitae'
 ---
 
-You can download my full CV [here](/resume.pdf).
-
-<!-- Add more sections or bullet points if you like -->
+You can view my full CV by clicking the button below. The PDF will be here soon, as well.
