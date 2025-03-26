@@ -34,20 +34,20 @@ module.exports = {
       url: '/#about',
     },
     {
-      name: 'Research',
+      name: 'Industry Experience',
       url: '/#jobs',
     },
     {
-      name: 'Projects',
+      name: 'Research Highlights',
       url: '/#projects',
-    },
-    {
-      name: 'Contact',
-      url: '/#contact',
     },
     {
       name: 'Curriculum Vitae',
       url: '/#cv',
+    },
+    {
+      name: 'Contact',
+      url: '/#contact',
     },
   ],
 

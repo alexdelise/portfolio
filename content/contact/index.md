@@ -1,5 +1,5 @@
 ---
-title: 'Get In Touch'
+title: 'Get In Contact'
 buttonText: 'eMail Me'
 ---
 
