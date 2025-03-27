@@ -1,7 +1,7 @@
 ---
 date: '2024-01-2024'
 title: 'Support Vector Regression for Stock Price Prediction'
-github: 'https://github.com/yashitanamdeo/Medium-Blogging'
+github: 'https://github.com/alexdelise/stocksSVR'
 external: 'https://drive.google.com/file/d/1EOs5cDw4ACNh380G2REmcOj_oHxnKUI4/view?usp=sharing'
 tech:
   - Python
