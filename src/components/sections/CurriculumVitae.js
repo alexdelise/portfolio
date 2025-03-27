@@ -19,7 +19,7 @@ const StyledButton = styled(Link)`
 `;
 
 const CurriculumVitae = ({ data }) => {
-  const { frontmatter, html } = data[8].node; // WILL HAVE TO CHANGE IT DEPENDING ON THE ORDER
+  const { frontmatter, html } = data[7].node; // WILL HAVE TO CHANGE IT DEPENDING ON THE ORDER
   const { title } = frontmatter;
 
   return (

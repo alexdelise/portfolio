@@ -145,7 +145,7 @@ const ExpandedCVPage = ({ data, location }) => {
   useEffect(() => {
     sr.reveal(revealTitle.current, srConfig());
     sr.reveal(revealTable.current, srConfig());
-    revealRows.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 10)));
+    revealRows.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 2.5)));
   }, []);
 
   const eduNode = data.education.edges[0].node;

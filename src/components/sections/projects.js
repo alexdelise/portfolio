@@ -145,10 +145,9 @@ const Projects = ({ data }) => {
 
   return (
     <StyledContainer>
-      <StyledTitle ref={revealTitle}>Curriculum Vitae</StyledTitle>
+      <StyledTitle ref={revealTitle}>Other Personal Projects</StyledTitle>
       <StyledArchiveLink to="/archive" ref={revealArchiveLink}>
-        Click here for my complete CV, otherwise below is a brief snapshot of my contributions to
-        the field.
+        For some of my personal projects and research, click the links below.
       </StyledArchiveLink>
 
       <StyledGrid>
