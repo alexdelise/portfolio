@@ -2,31 +2,33 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { Section, Heading } from '@styles';
+import { Section, Heading, Button } from '@styles';
 
-const StyledButton = styled(Link)`
+const StyledButtonWrapper = styled.div`
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+`;
+
+const StyledCVButton = styled(Button)`
   display: inline-block;
-  margin-top: 30px;
-  padding: 10px 20px;
-  background-color: brown;
-  color: #fff;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-  &:hover {
-    background-color: #a0522d;
-  }
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
 `;
 
 const CurriculumVitae = ({ data }) => {
-  const { frontmatter, html } = data[7].node; // WILL HAVE TO CHANGE IT DEPENDING ON THE ORDER
+  const { frontmatter, html } = data[7].node; // will need to change index
   const { title } = frontmatter;
 
   return (
     <Section id="cv">
       <Heading>{title}</Heading>
       <div dangerouslySetInnerHTML={{ __html: html }} />
-      <StyledButton to="/expanded-cv">View Full CV</StyledButton>
+      <StyledButtonWrapper>
+        <StyledCVButton as={Link} to="/expanded-cv">
+          View Full CV
+        </StyledCVButton>
+      </StyledButtonWrapper>
     </Section>
   );
 };

@@ -7,4 +7,4 @@ range: 'June 2025 - Aug 2025'
 url: ''
 ---
 
-- Currently seeking my first internship.
+- Currently seeking my first internship. Please feel free to reach out to me!

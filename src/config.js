@@ -3,7 +3,7 @@ module.exports = {
   siteDescription:
     'Yashita Namdeo is an incoming Software Developer, based in India, who loves learning new things and helping tech beginners.',
   siteKeywords:
-    'Alexander DeLise, Yashita, Namdeo, yashitanamdeo, software engineer, web developer, javascript, python, java, svvv, indore',
+    'Alexander DeLise, Alexander, DeLise, alexdelise, data, data analytics, operations research, python, R, engineering, quantum computing',
   siteUrl: 'https://yashitanamdeo.github.io/',
   siteLanguage: 'en_US',
   googleAnalyticsID: 'UA-45666519-2',
@@ -12,7 +12,7 @@ module.exports = {
   location: ' Tampa, FL',
   email: 'alex.r.delise@gmail.com',
   github: 'https://github.com/alexdelise',
-  twitterHandle: '@',
+  twitterHandle: '@alexdelise',
   socialMedia: [
     {
       name: 'Linkedin',
