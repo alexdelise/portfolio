@@ -11,4 +11,4 @@ package-lock.json
 .vscode/
 
 # Ignore redux folders
-redux*/
+reduxcache*/
