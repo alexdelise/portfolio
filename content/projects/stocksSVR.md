@@ -1,5 +1,5 @@
 ---
-date: '2024-01-2024'
+date: '2024-01-04'
 title: 'Support Vector Regression for Stock Price Prediction'
 github: 'https://github.com/alexdelise/stocksSVR'
 external: 'https://drive.google.com/file/d/1EOs5cDw4ACNh380G2REmcOj_oHxnKUI4/view?usp=sharing'
