@@ -18,4 +18,4 @@ I have worked on projects involving mixed-integer linear and nonlinear programmi
 
 Outside of class, I am involved in mentoring and leadership, and I enjoy stating active.
 
-Here are a few of the other things I enjoy!
+Here are a few of the other things that I enjoy!
