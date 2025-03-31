@@ -73,7 +73,7 @@ const sectionConfig = {
     },
   },
   'Industry Experience': {
-    headers: ['Period', 'Position', 'Company', 'Link'],
+    headers: ['Period', 'Company', 'Position', 'Link'],
     fieldMapping: {
       year: 'date',
       title: 'degree', // Assuming "degree" field holds the job title
@@ -186,12 +186,14 @@ const ExpandedCVPage = ({ data, location }) => {
               margin: '0 0 20px',
               lineHeight: 1.2,
               fontWeight: 700,
-            }}>
+            }}
+          >
             Full Academic CV
           </h1>
           <p
             className="subtitle"
-            style={{ color: TEXT_COLOR, marginBottom: '30px', fontSize: '20px' }}>
+            style={{ color: TEXT_COLOR, marginBottom: '30px', fontSize: '20px' }}
+          >
             All of my work in one place.
           </p>
         </header>
@@ -236,7 +238,8 @@ const ExpandedCVPage = ({ data, location }) => {
                                   href={item[config.fieldMapping.link]}
                                   target="_blank"
                                   rel="nofollow noopener noreferrer"
-                                  aria-label="External Link">
+                                  aria-label="External Link"
+                                >
                                   <FormattedIcon name="External" />
                                 </StyledLinkIcon>
                               ) : (

@@ -1,9 +1,8 @@
 ---
 title: 'Industry Experience'
 items:
-  - date: '2022 - 2025'
-    degree: 'Poster Title'
-    institution: 'Conference or Symposium Name'
-    external: 'http://example.com/poster.pdf'
-  # ...
+  - date: 'Jun 2025 - Aug 2025'
+    degree: 'Company'
+    institution: 'Position'
+    external: ''
 ---
