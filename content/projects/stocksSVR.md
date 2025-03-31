@@ -8,7 +8,7 @@ tech:
   - scikit-learn
   - NumPy
   - pandas
-  - matplotlib
+  - Matplotlib
 company: 'CompProbModel'
 showInProjects: true
 ---

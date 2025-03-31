@@ -139,9 +139,10 @@ const Projects = ({ data }) => {
 
   return (
     <StyledContainer>
-      <StyledTitle ref={revealTitle}>Other Personal Projects</StyledTitle>
+      <StyledTitle ref={revealTitle}>Other Personal Projects and Papers</StyledTitle>
       <StyledArchiveLink to="/archive" ref={revealArchiveLink}>
-        For some of my personal projects and research, click the links below.
+        For some of my personal projects and research, see below. These demonstrate my code and
+        technical writing ability.
       </StyledArchiveLink>
 
       <StyledGrid>
