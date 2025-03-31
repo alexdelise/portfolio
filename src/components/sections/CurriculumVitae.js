@@ -17,7 +17,7 @@ const StyledCVButton = styled(Button)`
 `;
 
 const CurriculumVitae = ({ data }) => {
-  const { frontmatter, html } = data[7].node; // will need to change index
+  const { frontmatter, html } = data[6].node; // will need to change index
   const { title } = frontmatter;
 
   return (
