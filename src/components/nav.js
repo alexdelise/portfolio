@@ -9,7 +9,9 @@ import { Menu } from '@components';
 import { IconLogo } from '@components/icons';
 import styled from 'styled-components';
 import { theme, mixins, media } from '@styles';
-const { colors, fontSizes, fonts, loaderDelay } = theme;
+import '../styles/LogoFix.css';
+
+const { colors, fontSizes, fonts, loaderDelay } = theme; 
 
 const StyledContainer = styled.header`
   ${mixins.flexBetween};

@@ -1,4 +1,6 @@
 import React from 'react';
+import '../styles/LogoFix.css';
+
 
 const IconLoader = () => (
   <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
