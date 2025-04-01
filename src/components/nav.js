@@ -11,6 +11,8 @@ import styled from 'styled-components';
 import { theme, mixins, media } from '@styles';
 import '../styles/LogoFix.css';
 
+
+
 const { colors, fontSizes, fonts, loaderDelay } = theme; 
 
 const StyledContainer = styled.header`

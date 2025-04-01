@@ -1,9 +1,14 @@
 import React from 'react';
-import '../styles/LogoFix.css';
+import '../../styles/LogoFix.css';
 
 
 const IconLoader = () => (
-  <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <svg
+    id="logo"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 100 100"
+    preserveAspectRatio="xMidYMid meet"
+  >
     <title>Loader Logo</title>
     <g>
       <g id="B" transform="translate(11.000000, 5.000000)"></g>
@@ -20,7 +25,7 @@ const IconLoader = () => (
                   L 89, 28 z"
       />
     </g>
-    <text x="21" y="67" fill="currentColor" fontSize="55px" fontFamily="Consolas, serif">
+    <text id="logo-text" x="26" y="62" fill="currentColor">
       AD
     </text>
   </svg>

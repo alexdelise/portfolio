@@ -21,7 +21,7 @@ const IconLogo = () => (
         />
       </g>
     </g>
-    <text id="logo-text" x="20.5" y="63" fill="currentColor">
+    <text id="logo-text" x="18.75" y="60" fill="currentColor">
       AD
     </text>
   </svg>
