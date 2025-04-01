@@ -24,9 +24,16 @@ const IconLoader = () => (
                   L 89, 28 z"
       />
     </g>
-    <text id="logo-text" x="50" y="50" fill="currentColor">
+    <text
+      id="logo-text"
+      x="50"
+      y="50"
+      fill="currentColor"
+      style={{ fontFamily: 'Calibre, SFMono, -apple-system, sans-serif' }}
+    >
       AD
     </text>
+
   </svg>
 );
 

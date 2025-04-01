@@ -21,9 +21,16 @@ const IconLogo = () => (
         />
       </g>
     </g>
-    <text id="logo-text" x="42" y="48" fill="currentColor">
+    <text
+      id="logo-text"
+      x="42"
+      y="48"
+      fill="currentColor"
+      style={{ fontFamily: 'Calibre, SFMono, -apple-system, sans-serif' }}
+    >
       AD
     </text>
+
   </svg>
 );
 
