@@ -20,4 +20,10 @@ items:
     degree: 'Vires Scholarship'
     institution: 'Florida State University'
     external: 'https://admissions.fsu.edu/first-year/scholarships'
+
+  - date: 'Fall 2023 - Present'
+    degree: "President's List, Seminole Scholar, Torch Night Award"
+    institution: 'Florida State University'
+    external: 'https://www.linkedin.com/in/alexanderdelise/details/honors/'
+
 ---

@@ -16,8 +16,13 @@ items:
     institution: 'Joint Mathematics Meetings'
     external: 'https://meetings.ams.org/math/jmm2025/meetingapp.cgi/Paper/42185'
 
+  - date: 'Jul 2024'
+    degree: 'Learning Feasible States with ma-QAOA and QAOA for Constrained Optimization'
+    institution: 'UTK Summer Research Symposium'
+    external: 'https://www.linkedin.com/feed/update/urn:li:activity:7224413523961876480/'
+
   - date: 'Apr 2024'
     degree: 'Cost-Effective Location Allocation for COVID-19 Patient Assignment in Florida: A Data-Driven Approach'
-    institution: '24th Annual 2024 Undergraduate Research Symposium'
+    institution: '24th Annual Undergraduate Research Symposium'
     external: 'https://cre.fsu.edu/research-symposium-group-view?combine=delise'
 ---

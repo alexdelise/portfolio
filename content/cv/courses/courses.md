@@ -1,5 +1,5 @@
 ---
-title: 'Courses'
+title: 'Relevant Coursework'
 items:
   - date: 'Spring 2025'
     degree: 'ISC 4304C'

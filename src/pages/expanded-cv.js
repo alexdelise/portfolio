@@ -126,7 +126,7 @@ const sectionConfig = {
       link: 'external',
     },
   },
-  Courses: {
+  'Relevant Coursework': {
     headers: ['Semester', 'Code', 'Course', 'Institution'],
     fieldMapping: {
       year: 'date',
