@@ -13,5 +13,7 @@
     letter-spacing: 0.5px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    dominant-baseline: middle;
+    text-anchor: middle;
   }
   

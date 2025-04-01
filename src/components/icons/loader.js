@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../styles/LogoFix.css';
 
-
 const IconLoader = () => (
   <svg
     id="logo"
@@ -25,7 +24,7 @@ const IconLoader = () => (
                   L 89, 28 z"
       />
     </g>
-    <text id="logo-text" x="26" y="62" fill="currentColor">
+    <text id="logo-text" x="50" y="50" fill="currentColor">
       AD
     </text>
   </svg>
